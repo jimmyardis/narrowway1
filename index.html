@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narrow Gate | Legacy & Design</title>
+    <title>Narrow Gate | Civic Design and Development</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <style>
@@ -43,6 +43,7 @@
             letter-spacing: 3px;
             color: white;
             text-transform: uppercase;
+            text-decoration: none;
         }
 
         /* --- I'ON WATERFRONT HERO --- */
@@ -106,6 +107,8 @@
             overflow: hidden;
             cursor: pointer;
             border: 0.2px solid rgba(255,255,255,0.05);
+            text-decoration: none; /* For the link */
+            display: block;
         }
 
         .cat-box img {
@@ -134,6 +137,7 @@
             text-transform: uppercase;
             text-align: center;
             padding: 0 20px;
+            margin: 0;
         }
 
         .cat-box:hover img { transform: scale(1.05); opacity: 0.4; }
@@ -214,13 +218,13 @@
 <body>
 
     <nav>
-        <div class="brand">Narrow Gate</div>
+        <a href="index.html" class="brand">Narrow Gate – Civic Design and Development</a>
         <div style="color: rgba(255,255,255,0.7); font-size: 0.7rem; letter-spacing: 3px;">LEGACY & DESIGN</div>
     </nav>
 
     <header>
         <div class="hero-bottom-fixed">
-            <h1>Passionate Advocates of Human Scale</h1>
+            <h1>Passionate Advocates of Human Scale Design</h1>
         </div>
     </header>
 
@@ -229,26 +233,26 @@
     </section>
 
     <div class="work-grid" id="portfolio">
-        <div class="cat-box">
+        <a href="neighborhoods.html" class="cat-box">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDsQ80nRqIjJY7r_3O_7kIzx6_OxG0B5SyQ&s" alt="New Neighborhoods">
             <div class="cat-overlay">
                 <h2>New Neighborhoods</h2>
             </div>
-        </div>
+        </a>
 
-        <div class="cat-box">
+        <a href="renovation.html" class="cat-box">
             <img src="https://www.cnu.org/sites/default/files/Earls-court-plan.png" alt="Urban Renovation">
             <div class="cat-overlay">
                 <h2>Urban Renovation</h2>
             </div>
-        </div>
+        </a>
 
-        <div class="cat-box">
+        <a href="reuse.html" class="cat-box">
             <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/3/files/2013/04/5.jpg" alt="Adaptive Reuse">
             <div class="cat-overlay">
                 <h2>Adaptive Reuse</h2>
             </div>
-        </div>
+        </a>
     </div>
 
     <section class="metrics-section">
