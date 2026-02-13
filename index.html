@@ -46,7 +46,7 @@
             text-decoration: none;
         }
 
-        /* --- HERO --- */
+        /* --- I'ON WATERFRONT HERO --- */
         header {
             height: 100vh;
             position: relative;
@@ -55,7 +55,7 @@
             align-items: center;
             text-align: center;
             background: linear-gradient(var(--overlay), var(--overlay)), 
-                        url('images/ionhero.webp'); 
+                        url('ionwaterfront.png'); 
             background-size: cover;
             background-position: center;
             color: white;
@@ -78,7 +78,7 @@
             text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
         }
 
-        /* --- INVERTED STATEMENT BLOCK --- */
+        /* --- NAVY PHILOSOPHY BLOCK --- */
         .philosophy-navy {
             padding: 140px 15%;
             text-align: center;
@@ -88,22 +88,13 @@
 
         .philosophy-navy h2 {
             font-size: 2.2rem;
-            line-height: 1.5;
+            line-height: 1.7;
             font-weight: 400;
             max-width: 950px;
             margin: 0 auto;
         }
 
-        .philosophy-navy p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            max-width: 750px;
-            margin: 40px auto 0;
-            line-height: 1.8;
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* --- CATEGORY GRID --- */
+        /* --- IMAGE-BASED CATEGORY GRID --- */
         .work-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -116,7 +107,7 @@
             overflow: hidden;
             cursor: pointer;
             border: 0.2px solid rgba(255,255,255,0.05);
-            text-decoration: none;
+            text-decoration: none; /* For the link */
             display: block;
         }
 
@@ -152,33 +143,33 @@
         .cat-box:hover img { transform: scale(1.05); opacity: 0.4; }
         .cat-box:hover .cat-overlay { background: rgba(10, 25, 47, 0.8); }
 
-        /* --- CONTACT CTA --- */
-        .cta-section {
-            padding: 120px 8%;
-            text-align: center;
+        /* --- METRIC DASHBOARD --- */
+        .metrics-section {
+            padding: 100px 8%;
             background: var(--white);
+            border-top: 1px solid #eee;
         }
 
-        .cta-section h2 {
-            font-size: 2.5rem;
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .metric-item h4 {
+            font-size: 3.5rem;
+            margin: 0;
             font-weight: 400;
-            margin-bottom: 30px;
+            color: var(--navy);
         }
 
-        .contact-link {
-            font-size: 0.8rem;
+        .metric-item p {
+            font-size: 0.75rem;
             letter-spacing: 3px;
             text-transform: uppercase;
-            text-decoration: none;
-            color: var(--navy);
-            border: 1px solid var(--navy);
-            padding: 15px 40px;
-            transition: all 0.3s ease;
-        }
-
-        .contact-link:hover {
-            background: var(--navy);
-            color: white;
+            color: #666;
+            margin-top: 10px;
         }
 
         /* --- FOOTER --- */
@@ -208,11 +199,12 @@
             text-transform: uppercase;
         }
 
+        /* --- MOBILE OPTIMIZATION --- */
         @media (max-width: 900px) {
             .hero-bottom-fixed h1 { font-size: 6vw !important; letter-spacing: 4px; }
             .philosophy-navy { padding: 80px 10%; }
             .philosophy-navy h2 { font-size: 1.6rem; }
-            .work-grid { grid-template-columns: 1fr; }
+            .work-grid, .metrics-grid { grid-template-columns: 1fr; }
             .cat-box { height: 400px; }
             .footer-bottom { flex-direction: column; gap: 20px; }
         }
@@ -226,8 +218,8 @@
 <body>
 
     <nav>
-        <a href="index.html" class="brand">Narrow Gate</a>
-        <div style="color: rgba(255,255,255,0.7); font-size: 0.7rem; letter-spacing: 3px;">EST. 1989</div>
+        <a href="index.html" class="brand">Narrow Gate – Civic Design and Development</a>
+        <div style="color: rgba(255,255,255,0.7); font-size: 0.7rem; letter-spacing: 3px;">LEGACY & DESIGN</div>
     </nav>
 
     <header>
@@ -237,36 +229,52 @@
     </header>
 
     <section class="philosophy-navy">
-        <h2>Since 1989 we have participated in more than 25 place-making initiatives.</h2>
-        <p>Our practice ranges from historic renovation to urban infill, from new home construction to the design and building of entire neighborhoods.</p>
+        <h2>Combining lessons from history with modern advances, we work to build and restore a more beautiful built environment aimed at enhancing relationship.</h2>
     </section>
 
     <div class="work-grid" id="portfolio">
         <a href="neighborhoods.html" class="cat-box">
-            <img src="images/ionhero.webp" alt="New Neighborhoods">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDsQ80nRqIjJY7r_3O_7kIzx6_OxG0B5SyQ&s" alt="New Neighborhoods">
             <div class="cat-overlay">
                 <h2>New Neighborhoods</h2>
             </div>
         </a>
 
         <a href="renovation.html" class="cat-box">
-            <img src="images/EarlsCourt-76.jpg" alt="Urban Renovation">
+            <img src="https://www.cnu.org/sites/default/files/Earls-court-plan.png" alt="Urban Renovation">
             <div class="cat-overlay">
                 <h2>Urban Renovation</h2>
             </div>
         </a>
 
         <a href="reuse.html" class="cat-box">
-            <img src="images/stjext.webp" alt="Adaptive Reuse">
+            <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/3/files/2013/04/5.jpg" alt="Adaptive Reuse">
             <div class="cat-overlay">
                 <h2>Adaptive Reuse</h2>
             </div>
         </a>
     </div>
 
-    <section class="cta-section">
-        <h2>Building something of enduring value.</h2>
-        <a href="mailto:vince@loci.com" class="contact-link">Get In Touch</a>
+    <section class="metrics-section">
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <h4 class="serif">3</h4>
+                <p>Continents</p>
+            </div>
+            <div class="metric-item">
+                <h4 class="serif">11</h4>
+                <p>Countries</p>
+            </div>
+            <div class="metric-item">
+                <h4 class="serif">35</h4>
+                <h4 class="serif" style="font-size: 1.5rem; display: inline;">Years</h4>
+                <p>Of Experience</p>
+            </div>
+            <div class="metric-item">
+                <h4 class="serif">$500M+</h4>
+                <p>Value Created</p>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -282,7 +290,7 @@
     </footer>
 
     <script>
-        ScrollReveal().reveal('.cat-box, .philosophy-navy, .cta-section', { interval: 150, distance: '30px', origin: 'bottom' });
+        ScrollReveal().reveal('.cat-box, .philosophy-navy, .metric-item', { interval: 150, distance: '30px', origin: 'bottom' });
     </script>
 </body>
 </html>
