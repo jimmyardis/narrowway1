@@ -13,7 +13,6 @@
         nav { padding: 40px 8%; display: flex; justify-content: space-between; border-bottom: 1px solid #eee; }
         .brand { font-size: 0.9rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; color: var(--navy); }
 
-        /* --- NAVY LEFT-JUSTIFIED HEADER --- */
         .page-header { 
             padding: 100px 8%; 
             text-align: left; 
@@ -27,7 +26,6 @@
             font-size: 1.3rem; 
             line-height: 1.6; 
             opacity: 0.9; 
-            font-family: 'Inter', sans-serif;
             letter-spacing: 0.5px;
         }
 
@@ -43,14 +41,12 @@
         .project-text p { line-height: 1.8; opacity: 0.8; font-size: 1.1rem; }
 
         .gallery-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
-        .gallery-strip img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; transition: opacity 0.3s; }
-        .gallery-strip img:hover { opacity: 0.8; }
+        .gallery-strip img { width: 100%; height: 200px; object-fit: cover; }
         
         footer { padding: 60px 8%; background: var(--navy); color: white; text-align: center; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
         
         @media (max-width: 900px) {
             .page-header { padding: 60px 8%; }
-            .page-header h1 { font-size: 2.5rem; }
             .project-main { grid-template-columns: 1fr; gap: 30px; }
             .featured-image img { height: 350px; }
             .gallery-strip { grid-template-columns: 1fr 1fr; }
@@ -71,41 +67,76 @@
     <section class="project-section">
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/ionwaterfront.png" alt="I'On Neighborhood"></div>
+                <div class="featured-image"><img src="images/ionhero.jpg" alt="I'On Neighborhood"></div>
                 <div class="project-text">
                     <h2>I’On</h2>
-                    <p>Located in Mount Pleasant, South Carolina, I’On is a nationally recognized model of New Urbanism. Built on the principles of traditional neighborhood design, it integrates diverse residential types with public spaces, civic buildings, and the I’On Club to create a timeless Lowcountry village.</p>
+                    <p>Located in Mount Pleasant, South Carolina, I’On is a nationally recognized model of New Urbanism. Founded on the principles of traditional neighborhood design, it integrates diverse residential architecture with vibrant public spaces and a village square, creating a timeless Lowcountry community that prioritizes the pedestrian over the automobile.</p>
                 </div>
+            </div>
+            <div class="gallery-strip">
+                <img src="images/ion1.jpg" alt="I'On Detail 1">
+                <img src="images/ion2.jpg" alt="I'On Detail 2">
+                <img src="images/ion3.jpg" alt="I'On Detail 3">
             </div>
         </div>
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/lascatalinas-hero.jpg" alt="Las Catalinas Costa Rica"></div>
-                <div class="project-text">
-                    <h2>Las Catalinas</h2>
-                    <p>A thoughtfully planned, car-free town on Costa Rica’s Guanacaste coast. Designed in the spirit of New Urbanism to foster walkability, community connection, and harmonious integration with the surrounding tropical landscape.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="project-main">
-                <div class="featured-image"><img src="images/hammonds-ferry.jpg" alt="Hammond's Ferry"></div>
-                <div class="project-text">
-                    <h2>Hammond’s Ferry</h2>
-                    <p>A 200-acre neighborhood designed to seamlessly connect the city of North Augusta to its roots along the Savannah River, providing a vibrant waterfront destination for the community.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="project-main">
-                <div class="featured-image"><img src="images/newpoint-hero.jpg" alt="Newpoint Beaufort"></div>
+                <div class="featured-image"><img src="images/newpointhero.jpg" alt="Newpoint Beaufort"></div>
                 <div class="project-text">
                     <h2>Newpoint</h2>
-                    <p>A waterfront community in Beaufort, South Carolina, designed to harmonize with the historic charm of the region and established an early standard for Narrow Gate’s commitment to building beautiful, enduring neighborhoods.</p>
+                    <p>Situated on the high bluffs of Lady's Island overlooking historic Beaufort, Newpoint was an early pioneer in the New Urbanist movement. This waterfront community replicates the charm of Beaufort’s historic district with narrow, tree-lined streets and front-porch architecture, establishing an enduring standard for coastal civic design.</p>
                 </div>
+            </div>
+            <div class="gallery-strip">
+                <img src="images/newpoint1.jpg" alt="Newpoint Detail 1">
+                <img src="images/newpoint2.jpg" alt="Newpoint Detail 2">
+                <img src="images/newpoint3.jpg" alt="Newpoint Detail 3">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-main">
+                <div class="featured-image"><img src="images/lashero.jpg" alt="Las Catalinas Costa Rica"></div>
+                <div class="project-text">
+                    <h2>Las Catalinas</h2>
+                    <p>A minor investor in Las Catalinas, a thoughtfully planned, car-free town on Costa Rica’s Guanacaste coast. The over 12,000-acre town was designed in the spirit of New Urbanism to foster walkability, community connection, and harmonious integration with the surrounding tropical landscape.</p>
+                </div>
+            </div>
+            <div class="gallery-strip">
+                <img src="images/las1.jpg" alt="Las Catalinas Detail 1">
+                <img src="images/las2.jpg" alt="Las Catalinas Detail 2">
+                <img src="images/las3.jpg" alt="Las Catalinas Detail 3">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-main">
+                <div class="featured-image"><img src="images/easthero.jpg" alt="East Beach Norfolk"></div>
+                <div class="project-text">
+                    <h2>East Beach</h2>
+                    <p>A 90-acre waterfront community in Norfolk, Virginia designed and built in the tradition of Atlantic Coastal villages. This development showcases the scalability of traditional neighborhood design along the Chesapeake Bay.</p>
+                </div>
+            </div>
+            <div class="gallery-strip">
+                <img src="images/east1.jpg" alt="East Beach Detail 1">
+                <img src="images/east2.jpg" alt="East Beach Detail 2">
+                <img src="images/east3.jpg" alt="East Beach Detail 3">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-main">
+                <div class="featured-image"><img src="images/hammondhero.jpg" alt="Hammond's Ferry"></div>
+                <div class="project-text">
+                    <h2>Hammond's Ferry</h2>
+                    <p>A 200-acre neighborhood designed to seamlessly connect the city of North Augusta to its roots along the Savannah River. This project represents a commitment to riverfront revitalization through walkable, mixed-use planning.</p>
+                </div>
+            </div>
+            <div class="gallery-strip">
+                <img src="images/hammond1.jpg" alt="Hammond's Ferry Detail 1">
+                <img src="images/hammond2.jpg" alt="Hammond's Ferry Detail 2">
+                <img src="images/hammond3.jpg" alt="Hammond's Ferry Detail 3">
             </div>
         </div>
     </section>
