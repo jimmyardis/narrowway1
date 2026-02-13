@@ -10,7 +10,7 @@
         body { margin: 0; font-family: 'Inter', sans-serif; color: var(--navy); overflow-x: hidden; }
         h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
         
-        nav { padding: 40px 8%; display: flex; justify-content: space-between; border-bottom: 1px solid #eee; }
+        nav { padding: 40px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
         .brand { font-size: 0.9rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; color: var(--navy); }
 
         .page-header { 
@@ -42,13 +42,12 @@
         .status-badge { display: inline-block; padding: 5px 15px; background: var(--navy); color: white; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.2); }
 
         .gallery-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
-        .gallery-strip img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
-
-        .narrow-strip { grid-template-columns: repeat(3, 1fr); } 
-
+        .gallery-strip img { width: 100%; height: 200px; object-fit: cover; }
+        
         footer { padding: 60px 8%; background: var(--navy); color: white; text-align: center; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
         
         @media (max-width: 900px) {
+            .page-header { padding: 60px 8%; }
             .project-main { grid-template-columns: 1fr; gap: 30px; }
             .featured-image img { height: 350px; }
             .gallery-strip { grid-template-columns: 1fr 1fr; }
@@ -57,8 +56,8 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="brand">Narrow Gate – Civic Design and Development</a>
-        <div style="font-size: 0.7rem; letter-spacing: 2px; opacity: 0.5;">PORTFOLIO</div>
+        <a href="index.html" class="brand">Narrow Gate</a>
+        <div style="font-size: 0.7rem; letter-spacing: 2px; opacity: 0.5;">EST. 1989</div>
     </nav>
 
     <header class="page-header">
@@ -91,25 +90,20 @@
                     <p>Coming soon! The historic c.1858 St. James Methodist Church—most recently home to the Karpeles Manuscript Library Museum—is being fully restored to create a vibrant new destination in the heart of downtown Charleston, featuring an elegant event venue, neighborhood café, and five thoughtfully designed short-term rental residences.</p>
                 </div>
             </div>
-            <div class="gallery-strip narrow-strip">
-                <img src="images/St.James_Rendering1.webp" alt="St. James Concept Rendering">
-                <div></div> 
-                <div></div> 
             </div>
-        </div>
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/414Whilden-0013.webp" alt="414 Whilden Interior Hero"></div>
+                <div class="featured-image"><img src="images/whildenhero.webp" alt="414 Whilden Hero"></div>
                 <div class="project-text">
                     <h2>414 Whilden</h2>
                     <p>Embedded in the Earl’s Court neighborhood, this unassuming commercial building was fully renovated to house two vibrant artist galleries.</p>
                 </div>
             </div>
             <div class="gallery-strip">
-                <img src="images/414Whilden-0003.webp" alt="Interior Gallery Detail">
-                <img src="images/414Whilden-0016.webp" alt="Gallery Interior Perspective">
-                <img src="images/414Whilden-002f.webp" alt="Architectural Detail">
+                <img src="images/whilden1.webp" alt="Whilden Gallery Detail 1">
+                <img src="images/whilden2.webp" alt="Whilden Gallery Detail 2">
+                <img src="images/whilden3.webp" alt="Whilden Gallery Detail 3">
             </div>
         </div>
     </section>
