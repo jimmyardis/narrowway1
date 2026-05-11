@@ -201,9 +201,12 @@
 
         /* --- MOBILE --- */
         @media (max-width: 900px) {
-            .hero-bottom-fixed h1 { font-size: 6vw !important; letter-spacing: 4px; }
+            nav { padding: 20px; flex-direction: column; gap: 20px; align-items: center; }
+            nav > div:first-child { flex-direction: column; text-align: center; gap: 10px; }
+            nav > div:first-child > div { margin-left: 0 !important; font-size: 0.6rem !important; }
+            .hero-bottom-fixed h1 { font-size: 8vw !important; letter-spacing: 4px; }
             .philosophy-navy { padding: 80px 10%; }
-            .philosophy-navy h2 { font-size: 1.6rem; }
+            .philosophy-navy h2 { font-size: 1.4rem; }
             .work-grid, .metrics-grid { grid-template-columns: 1fr; }
             .cat-box { height: 400px; }
             .footer-bottom { flex-direction: column; gap: 20px; }
