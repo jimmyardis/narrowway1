@@ -45,7 +45,10 @@
 
         footer { padding: 60px 8%; background: var(--navy); color: white; text-align: center; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
         
-        @media (max-width: 900px) {
+                @media (max-width: 900px) {
+            nav { padding: 20px; flex-direction: column; gap: 20px; align-items: center; }
+            nav > div:first-child { flex-direction: column; text-align: center; gap: 10px; }
+            nav > div:first-child > div { margin-left: 0 !important; font-size: 0.6rem !important; }
             .page-header { padding: 60px 8%; }
             .bio-block { grid-template-columns: 1fr; gap: 40px; }
             .bio-block.reverse { direction: ltr; }
@@ -56,10 +59,13 @@
 <body>
     <nav>
         <div style="display: flex; align-items: center;">
-            <a href="index.html" class="brand"><img src="images/loci-logo-navy.png" alt="Loci Logo" style="height: 60px;"></a>
+            <a href="/" class="brand"><img src="images/loci-logo-navy.png" alt="Loci Logo" style="height: 60px;"></a>
             <div style="color: var(--navy); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-left: 20px;">Civic Art and Development</div>
         </div>
-        <div style="font-size: 0.7rem; letter-spacing: 2px; opacity: 0.5; align-self: center;">ABOUT US</div>
+                <div>
+            <a href="about.html" style="color: var(--navy); text-decoration: none; margin-right: 30px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">About Us</a>
+            <a href="https://narrowgate.dev" target="_blank" style="color: var(--navy); text-decoration: none; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">Blog</a>
+        </div>
     </nav>
 
     <header class="page-header">
