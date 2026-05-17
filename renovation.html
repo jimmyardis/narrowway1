@@ -35,8 +35,9 @@
         .project-item { margin-bottom: 150px; }
         
         .project-main { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: start; margin-bottom: 40px; }
-        .project-item:nth-child(even) .project-main { direction: rtl; }
-        .project-item:nth-child(even) .project-text { direction: ltr; }
+        .project-item:nth-child(even) .project-main { grid-template-columns: 0.8fr 1.2fr; }
+        .project-item:nth-child(even) .featured-image { order: 2; }
+        .project-item:nth-child(even) .project-text { order: 1; }
 
         .project-text h2 { font-size: 2.8rem; margin-top: 0; font-weight: 400; }
         .project-text p { line-height: 1.8; opacity: 0.8; font-size: 1.1rem; }
@@ -90,7 +91,7 @@
             .gallery-strip { grid-template-columns: 1fr 1fr; }
         }
     </style>
-    <link rel="icon" type="image/png" href="images/loci-logo.png">
+    <link rel="icon" type="image/png" href="images/loci-logo-navy.png">
 </head>
 <body>
     <nav>
@@ -152,7 +153,7 @@
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/catfiddle.jpg" alt="Catfiddle Street Plan"></div>
+                <div class="featured-image"><img src="images/Catfiddle2.jpeg" alt="Catfiddle Street Plan"></div>
                 <div class="project-text">
                     <h2>Catfiddle Street</h2>
                     <div class="project-details-box">
@@ -161,10 +162,11 @@
                         <p><strong>Program:</strong> 24 Residential Homes</p>
                     </div>
                     <p>Catfiddle Street represents a 21st-century evolution of organic infill growth. This project utilizes a time-honored pattern of development to create an intimate, walkable micro-neighborhood in the heart of the old city.</p>
-                    <a href="#" class="project-link">Catfiddle St. Manifesto - URBAN ERGONOMICS</a>
+                    <a href="http://urbanergonomics.com/" target="_blank" class="project-link">Catfiddle St. Manifesto - URBAN ERGONOMICS</a>
                 </div>
             </div>
-            <div class="gallery-strip">
+            <div class="gallery-strip" style="grid-template-columns: repeat(4, 1fr);">
+                <img src="images/catfiddle.jpg" alt="Catfiddle Street Detail New">
                 <img src="images/Catfiddle1.jpg" alt="Catfiddle Street Detail 1">
                 <img src="images/Catfiddle3.jpeg" alt="Catfiddle Street Detail 2">
                 <img src="images/Catfiddle4.jpeg" alt="Catfiddle Street Detail 3">
