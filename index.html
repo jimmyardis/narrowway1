@@ -175,6 +175,20 @@
             text-align: center;
         }
 
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .metric-value {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .metric-item h4 {
             font-size: 3.5rem;
             margin: 0;
@@ -291,16 +305,22 @@
     <section class="metrics-section">
         <div class="metrics-grid">
             <div class="metric-item">
-                <h4 class="serif">35</h4>
-                <h4 class="serif" style="font-size: 1.5rem; display: inline;">Years</h4>
+                <div class="metric-value">
+                    <h4 class="serif">35</h4>
+                    <h4 class="serif" style="font-size: 1.5rem;">Years</h4>
+                </div>
                 <p>Of Experience</p>
             </div>
             <div class="metric-item">
-                <h4 class="serif">25+</h4>
+                <div class="metric-value">
+                    <h4 class="serif">25+</h4>
+                </div>
                 <p>Place-Making Initiatives</p>
             </div>
             <div class="metric-item">
-                <h4 class="serif">$2.2B+</h4>
+                <div class="metric-value">
+                    <h4 class="serif">$2.2B+</h4>
+                </div>
                 <p>Value Created</p>
             </div>
         </div>
