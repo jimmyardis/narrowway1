@@ -40,6 +40,39 @@
         .project-text h2 { font-size: 2.8rem; margin-top: 0; font-weight: 400; }
         .project-text p { line-height: 1.8; opacity: 0.8; font-size: 1.1rem; }
 
+        .project-details-box {
+            background: #f9f9f9;
+            border-left: 3px solid var(--gold);
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .project-details-box p {
+            margin: 5px 0;
+            font-size: 0.95rem !important;
+            opacity: 1 !important;
+        }
+        .project-details-box strong {
+            color: var(--navy);
+            font-weight: 600;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--navy);
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .project-link:hover {
+            background: var(--gold);
+        }
+
         .gallery-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
         .gallery-strip img { width: 100%; height: 200px; object-fit: cover; }
         
@@ -81,7 +114,12 @@
                 <div class="featured-image"><img src="images/newpointhero.jpg" alt="Newpoint Beaufort"></div>
                 <div class="project-text">
                     <h2><a href="https://www.newpointsc.com/" target="_blank" style="color: inherit; text-decoration: none;">Newpoint (1991)</a></h2>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Beaufort, SC</p>
+                        <p><strong>Year:</strong> 1991</p>
+                    </div>
                     <p>Situated on a high bluff overlooking the Beaufort River, Newpoint was the earliest of Graham’s place-making endeavors. Advancing the maxim “they had it right the first time,” Newpoint takes inspiration from the charm of Beaufort’s historic district with intimate, tree-lined streets, front-porch architecture, and memorable parks. Newpoint established an exemplary model for coastal civic design.</p>
+                    <a href="https://www.newpointsc.com/" target="_blank" class="project-link">Visit Project Website</a>
                 </div>
             </div>
             <div class="gallery-strip">
@@ -93,17 +131,22 @@
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/ionhero.webp" alt="I'On Neighborhood"></div>
+                <div class="featured-image"><img src="images/ion1.jpg" alt="I'On Neighborhood"></div>
                 <div class="project-text">
                     <h2><a href="https://ioncommunity.com/" target="_blank" style="color: inherit; text-decoration: none;">I’On (1997)</a></h2>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Mount Pleasant, SC</p>
+                        <p><strong>Year:</strong> 1997</p>
+                        <p><strong>Size:</strong> 243 Acres</p>
+                    </div>
                     <p>Located in Mount Pleasant, South Carolina, I’On is a nationally recognized model of traditional neighborhood design. Founded on the principles of classic place-making, it integrates diverse residential architecture with vibrant public spaces and a village square, creating a timeless Lowcountry neighborhood that prioritizes the pedestrian over the automobile.</p>
-                    <a href="#" style="color: var(--gold); text-decoration: underline; font-weight: 600; font-size: 0.9rem; margin-top: 10px; display: inline-block;">View Project Profile</a>
+                    <a href="https://ioncommunity.com/" target="_blank" class="project-link">Visit Project Website</a>
                 </div>
             </div>
             <div class="gallery-strip">
-                <img src="images/ion1.webp" alt="I'On Detail 1">
-                <img src="images/ion2.webp" alt="I'On Detail 2">
-                <img src="images/ion3.webp" alt="I'On Detail 3">
+                <img src="images/ion2.jpg" alt="I'On Detail 1">
+                <img src="images/ion3.jpg" alt="I'On Detail 2">
+                <img src="images/ion4.jpg" alt="I'On Detail 3">
             </div>
         </div>
 
@@ -112,8 +155,14 @@
                 <div class="featured-image"><img src="images/hammondhero.webp" alt="Hammond's Ferry"></div>
                 <div class="project-text">
                     <h2><a href="https://hammondsferry.com/" target="_blank" style="color: inherit; text-decoration: none;">Hammond's Ferry (2002)</a></h2>
-                    <p>A 200-acre neighborhood designed to seamlessly connect the city of North Augusta to its roots along the Savannah River. This project represents a commitment to riverfront revitalization through walkable, mixed-use planning.<br><br><strong>Lead Developer:</strong> Leyland.</p>
-                    <a href="#" style="color: var(--gold); text-decoration: underline; font-weight: 600; font-size: 0.9rem; margin-top: 10px; display: inline-block;">View Project Profile</a>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> North Augusta, SC</p>
+                        <p><strong>Year:</strong> 2002</p>
+                        <p><strong>Size:</strong> 200 Acres</p>
+                        <p><strong>Lead Developer:</strong> Leyland</p>
+                    </div>
+                    <p>A neighborhood designed to seamlessly connect the city of North Augusta to its roots along the Savannah River. This project represents a commitment to riverfront revitalization through walkable, mixed-use planning.</p>
+                    <a href="https://hammondsferry.com/" target="_blank" class="project-link">Visit Project Website</a>
                 </div>
             </div>
             <div class="gallery-strip">
@@ -127,7 +176,13 @@
                 <div class="featured-image"><img src="images/easthero.webp" alt="East Beach Norfolk"></div>
                 <div class="project-text">
                     <h2><a href="https://eastbeachnorfolk.com/" target="_blank" style="color: inherit; text-decoration: none;">East Beach</a></h2>
-                    <p>A 90-acre waterfront community in Norfolk, Virginia designed and built in the tradition of Atlantic Coastal villages. This development showcases the scalability of traditional neighborhood design along the Chesapeake Bay.<br><br><strong>Lead Developer:</strong> Leyland and Frye Properties.</p>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Norfolk, VA</p>
+                        <p><strong>Size:</strong> 90 Acres</p>
+                        <p><strong>Lead Developer:</strong> Leyland and Frye Properties</p>
+                    </div>
+                    <p>A waterfront community in Norfolk, Virginia designed and built in the tradition of Atlantic Coastal villages. This development showcases the scalability of traditional neighborhood design along the Chesapeake Bay.</p>
+                    <a href="https://eastbeachnorfolk.com/" target="_blank" class="project-link">Visit Project Website</a>
                 </div>
             </div>
             <div class="gallery-strip">
@@ -142,7 +197,13 @@
                 <div class="featured-image"><img src="images/lashero.jpg" alt="Las Catalinas Costa Rica"></div>
                 <div class="project-text">
                     <h2><a href="https://www.lascatalinascr.com/" target="_blank" style="color: inherit; text-decoration: none;">Las Catalinas</a></h2>
-                    <p>A thoughtfully planned, car-free town on Costa Rica’s Guanacaste coast. The over 12,000-acre town was designed to foster walkability, community connection, and harmonious integration with the surrounding tropical landscape. Vince Graham participated as a minor investor.<br><br><strong>Lead Developer:</strong> Charles Brewer.</p>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Guanacaste, Costa Rica</p>
+                        <p><strong>Size:</strong> 1,200 Acres</p>
+                        <p><strong>Lead Developer:</strong> Charles Brewer</p>
+                    </div>
+                    <p>A thoughtfully planned, car-free town on Costa Rica’s Guanacaste coast. The town was designed to foster walkability, community connection, and harmonious integration with the surrounding tropical landscape. Vince Graham participated as a minor investor.</p>
+                    <a href="https://www.lascatalinascr.com/" target="_blank" class="project-link">Visit Project Website</a>
                 </div>
             </div>
             <div class="gallery-strip">

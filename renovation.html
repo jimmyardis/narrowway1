@@ -38,9 +38,41 @@
         .project-item:nth-child(even) .project-main { direction: rtl; }
         .project-item:nth-child(even) .project-text { direction: ltr; }
 
-        .featured-image img { width: 100%; height: 600px; object-fit: cover; box-shadow: 15px 15px 50px rgba(0,0,0,0.05); }
         .project-text h2 { font-size: 2.8rem; margin-top: 0; font-weight: 400; }
         .project-text p { line-height: 1.8; opacity: 0.8; font-size: 1.1rem; }
+
+        .project-details-box {
+            background: #f9f9f9;
+            border-left: 3px solid var(--gold);
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .project-details-box p {
+            margin: 5px 0;
+            font-size: 0.95rem !important;
+            opacity: 1 !important;
+        }
+        .project-details-box strong {
+            color: var(--navy);
+            font-weight: 600;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--navy);
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .project-link:hover {
+            background: var(--gold);
+        }
 
         .gallery-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
         .gallery-strip img { width: 100%; height: 200px; object-fit: cover; }
@@ -80,41 +112,56 @@
     <section class="project-section">
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/EarlsCourt-76.jpg" alt="Earl's Court Main"></div>
+                <div class="featured-image"><img src="images/earl1.jpg" alt="Earl's Court Main"></div>
                 <div class="project-text">
                     <h2>Earl’s Court</h2>
-                    <p>Earl’s Court is located on 1.3 acres at the entrance to the Old Village of Mt. Pleasant, SC. Its 27 homes range in size from 1,100 to 2,400 square feet. In addition, a renovated historic building houses two art galleries. And coming soon, a 23-room boutique inn and restaurant!</p>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Mount Pleasant, SC</p>
+                        <p><strong>Size:</strong> 1.3 Acres</p>
+                        <p><strong>Program:</strong> 27 Homes, Commercial, Boutique Inn (coming soon)</p>
+                    </div>
+                    <p>Located at the entrance to the Old Village of Mt. Pleasant, SC. Homes range in size from 1,100 to 2,400 square feet. In addition, a renovated historic building houses two art galleries. And coming soon, a 23-room boutique inn and restaurant!</p>
                 </div>
             </div>
             <div class="gallery-strip">
-                <img src="images/EarlsCourt-83.jpg" alt="Earl's Court Detail 1">
-                <img src="images/EarlsCourt-84.jpg" alt="Earl's Court Detail 2">
+                <img src="images/earl2.jpg" alt="Earl's Court Detail 1">
+                <img src="images/EarlsCourt-83.jpg" alt="Earl's Court Detail 2">
                 <img src="images/EarlsCourt-89.jpg" alt="Earl's Court Detail 3">
             </div>
         </div>
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/morris-new-1.jpg" alt="Morris Square Main"></div>
+                <div class="featured-image"><img src="images/morris1.jpg" alt="Morris Square Main"></div>
                 <div class="project-text">
                     <h2>Morris Square</h2>
-                    <p>Developed in the early 2000s on a vacant one-acre lot in the Radcliffborough neighborhood of downtown Charleston, Morris Square consisted of 5,000 square feet of commercial space, 32 condominium flats and attached and detached single-family homes, and two Charleston city parks. All on one acre!</p>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Charleston, SC</p>
+                        <p><strong>Size:</strong> 1 Acre</p>
+                        <p><strong>Program:</strong> 32 Homes, 5,000 sq ft Commercial, 2 Parks</p>
+                    </div>
+                    <p>Developed in the early 2000s on a vacant one-acre lot in the Radcliffborough neighborhood of downtown Charleston. A testament to dense, walkable urban infill.</p>
                 </div>
             </div>
             <div class="gallery-strip">
-                <img src="images/morris-new-2.jpg" alt="Morris Square Detail 1">
-                <img src="images/morris-new-3.jpg" alt="Morris Square Detail 2">
+                <img src="images/morris2.jpg" alt="Morris Square Detail 1">
+                <img src="images/morris3.jpg" alt="Morris Square Detail 2">
                 <img src="images/morris3.webp" alt="Morris Square Detail 3">
             </div>
         </div>
 
         <div class="project-item">
             <div class="project-main">
-                <div class="featured-image"><img src="images/Catfiddle2.jpeg" alt="Catfiddle Street Plan"></div>
+                <div class="featured-image"><img src="images/catfiddle.jpg" alt="Catfiddle Street Plan"></div>
                 <div class="project-text">
                     <h2>Catfiddle Street</h2>
-                    <p>Comprised of 24 residential homes on just under an acre of land, Catfiddle Street represents a 21st-century evolution of organic infill growth. This project utilizes a time-honored pattern of development to create an intimate, walkable micro-neighborhood in the heart of the old city.</p>
-                    <a href="#" style="color: var(--gold); text-decoration: underline; font-weight: 600; font-size: 0.9rem; margin-top: 10px; display: inline-block;">Catfiddle St. Manifesto - URBAN ERGONOMICS</a>
+                    <div class="project-details-box">
+                        <p><strong>Location:</strong> Charleston, SC</p>
+                        <p><strong>Size:</strong> &lt; 1 Acre</p>
+                        <p><strong>Program:</strong> 24 Residential Homes</p>
+                    </div>
+                    <p>Catfiddle Street represents a 21st-century evolution of organic infill growth. This project utilizes a time-honored pattern of development to create an intimate, walkable micro-neighborhood in the heart of the old city.</p>
+                    <a href="#" class="project-link">Catfiddle St. Manifesto - URBAN ERGONOMICS</a>
                 </div>
             </div>
             <div class="gallery-strip">
