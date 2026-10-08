@@ -90,15 +90,17 @@
             .gallery-strip { grid-template-columns: 1fr 1fr; }
         }
     </style>
+    <link rel="stylesheet" href="navigation.css">
     <link rel="icon" type="image/png" href="images/loci-logo-navy.png">
 </head>
 <body>
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <div style="display: flex; align-items: center;">
             <a href="/" class="brand"><img src="images/loci-logo-navy.png" alt="Loci Logo" style="height: 60px;"></a>
             <div style="color: var(--navy); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-left: 20px;">Civic Art and Development</div>
         </div>
-                <div>
+        <div class="site-links">
+            <a href="projects.html" style="color: var(--navy);">Projects</a>
             <a href="about.html" style="color: var(--navy); text-decoration: none; margin-right: 30px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">About Us</a>
             <a href="https://theionco.com/" target="_blank" style="color: var(--navy); text-decoration: none; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">Blog</a>
         </div>
@@ -108,6 +110,13 @@
         <h1>New Neighborhoods</h1>
         <p>Creating places of enduring value through the design and development of walkable, human-scaled neighborhoods that foster connection and relationship.</p>
     </header>
+
+    <div class="project-categories" role="navigation" aria-label="Project categories">
+        <a href="projects.html">All Projects</a>
+        <a href="neighborhoods.html" aria-current="page">New Neighborhoods</a>
+        <a href="renovation.html">Urban Restoration</a>
+        <a href="reuse.html">Historic Renovation</a>
+    </div>
 
     <section class="project-section">
         <div class="project-item">
